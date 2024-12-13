@@ -14,7 +14,7 @@ fetch(endpoint)
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
     });
-
+//display function
 function displayData(results) {
     const container = document.getElementById('data-container');
     if (results.length === 0) {
