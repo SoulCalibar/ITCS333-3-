@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Nationality Data</title>
-    <!-- PicoCSS for styling -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <title>UOB Student Nationality Data</title>
+    <link rel="stylesheet" href="https://picocss.com/css/pico.min.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <h1>University of Bahrain Student Nationality Data</h1>
-        <table id="student-table">
-            <thead>
-                <tr>
-                    <th>Nationality</th>
-                    <th>College</th>
-                    <th>Program</th>
-                    <th>Student Count</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Data will be inserted here -->
-            </tbody>
-        </table>
-    </main>
+    <h1>UOB Student Nationality Data</h1>
+    <div id="data-container"></div>
 
-    <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
